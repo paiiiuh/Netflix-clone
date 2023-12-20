@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Martel Sans', sans-serif;
+
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url('Assets/Images/BG.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    height: 80vh;
+    position: relative;
+}
+
+.main .box {
+    height: 80vh;
+    width: 100%;
+    opacity: 0.58;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 85vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 67px;
+
+}
+
+nav span img {
+    color: red;
+    width: 152px;
+    position: relative;
+    top: 12px;
+    left: 52px;
+    z-index: 3;
+}
+
+nav button {
+    position: relative;
+    z-index: 3;
+    top: 12px;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100% - 67px);
+    position: relative;
+    z-index: 4;
+    color: white;
+
+    font-family: 'Martel Sans', sans-serif;
+    gap: 18px;
+    padding: 0 33px;
+
+}
+
+.text>:first-child {
+    font-weight: bold;
+    font-size: 48px;
+    text-align: center;
+}
+
+.text>:nth-child(2) {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.text> :nth-child(3) {
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.separation {
+    height: 8px;
+    display: block;
+    background-color: rgb(52, 52, 52);
+    position: relative;
+    z-index: 10;
+
+}
+
+.join-button {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.join-button input {
+    background-color: rgba(2, 18, 20, 0.50);
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 11px 150px 15px 14px;
+    border: 2px solid rgba(183, 182, 182, 0.728);
+    border-radius: 9px;
+}
+
+.trans-btt {
+    background-color: rgba(23, 23, 23, 0.25);
+    color: white;
+    padding: 5px 4px;
+    border: 1px solid rgba(147, 146, 146, 0.728);
+    border-radius: 9px;
+    cursor: pointer;
+
+}
+
+.Sign-In-butt {
+    padding: 6px 18px;
+    background-color: red;
+    color: white;
+    border-radius: 9px;
+    font-weight: 700;
+    margin-left: 21px;
+    cursor: pointer;
+
+}
+
+.get-butt {
+    border-radius: 6px;
+    padding: 9px 39px;
+    background-color: red;
+    color: white;
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0px 6px;
+
+    cursor: pointer;
+
+}
+
+.fa-solid {
+    padding-left: 8px;
+}
+
+.first-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    max-height: 65vh;
+
+}
+@media  screen and (max-width:1450px) {
+    .first-section{
+        flex-wrap: wrap;
+    }
+    
+}
+
+.first-sect-text {
+    display: flex;
+
+    flex-direction: column;
+    padding: 34px 0px;
+    color: white;
+
+
+}
+
+
+.first-sect-img {
+
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0px;
+
+}
+
+.first-sect-img img {
+    width: 547px;
+    position: relative;
+    z-index: 20;
+}
+
+.first-sect-img video {
+    position: absolute;
+    width: 545px;
+}
+
+.first-section>div :first-child {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.first-section>div :nth-child(2) {
+    font-size: 20px;
+
+}
+
+.fourth .first-sect-img img {
+    z-index: 10;
+    position: relative;
+
+}
+
+.fourth .first-sect-img video {
+    top: 75px;
+    left: 63%;
+    width: 23vw;
+    position: absolute;
+
+}
+.faQ{
+    color: white;
+    /* background-color: black; */
+}
+.faQ h2{
+    text-align: center;
+    padding: 34px;
+    font-size: 48px;
+    font-weight: 900;
+}
+.qq{
+    font-size:24px ;
+    background-color: #2d2d2d;
+    display: flex;
+    padding: 22px ;
+    max-width: 60vw;
+    margin: 28px auto;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 1s ease-out;
+}
+.qq:hover{
+    background-color: #414141;
+}
+.end-join{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto;
+
+}
+.end-join span{
+    font-size: 22px;
+    text-align: center;
+    margin: 7px;
+}
+footer{
+margin: auto;
+max-width: 60vw;
+padding: 14px;
+color: white;
+}
+footer .questions{
+    padding: 34px 0;
+}
+.footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        color: white;
+
+}
+.footer a{
+   font-size: 14px;
+    color: white;
+}
+.foot-item{
+    display: flex;
+  flex-direction: column;
+  gap: 23px;
+  
+}
